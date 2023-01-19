@@ -1,0 +1,23 @@
+{% extends 'paginas/padre.html' %}
+{% block titulo %}Posteos{% endblock %}
+{% block subtitulo %}{% endblock %}
+{% block relleno %}
+{% for posteo in posteo %}
+<tr>
+    <td>{{ post.titulo }}</td> 
+    <td>{{ post.imagen }}</td> 
+    <td>{{ post.descripcion }}</td> 
+    <td>
+        <a name="" class="btn btn.info" href="" role="button">Editar</a>
+
+        <a name="" class="btn btn-danger" href="#" role="button">Borrar</a>
+    </td>
+    <td></td> 
+{% endfor %}
+
+</tr>
+
+
+
+<p>{{ mensaje }}</p>
+{% endblock %}
